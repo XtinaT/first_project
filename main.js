@@ -13,10 +13,10 @@ let myImage = document.querySelector('img');
 
 myImage.onclick = function(){
 let mySrc=myImage.getAttribute("src");
-if (mySrc==="images/IMG_7592.JPG"){
-	myImage.setAttribute ("src","images/IMG_8142.JPG");
+if (mySrc==="IMG_7592.JPG"){
+	myImage.setAttribute ("src","IMG_8142.JPG");
 }else{
-	myImage.setAttribute("src","images/IMG_7592.JPG");
+	myImage.setAttribute("src","IMG_7592.JPG");
 }
 }
 let myButton = document.querySelector("button");
