@@ -1,0 +1,11 @@
+
+.CONTENT p{
+  text-align:justify;
+  font-weight:bold;
+}
+@media all and (max-width:30em){
+  div.CONTENT p {
+    padding-left:10px;
+    padding-right:10px;
+  }  
+}

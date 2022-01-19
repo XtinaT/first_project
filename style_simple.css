@@ -1,0 +1,31 @@
+
+div.CONTENT_FOR_DEST{ 
+  width:80%;
+}
+.CONTENT_FOR_DEST div {
+  width:70%;
+  display:inline-block;
+}   
+.CONTENT_FOR_DEST div img {
+  width:80%;
+}  
+
+@media all and (max-width:30em){
+  div.CONTENT_FOR_DEST{ 
+   padding:0;
+   margin:0; 
+   width:100%;
+   border-radius: 0;
+   box-shadow:none;
+  }
+  .CONTENT_FOR_DEST div {
+   width:100%;
+   display:inline-block;
+  }   
+  .CONTENT_FOR_DEST div img {
+   width:90%;
+  }   
+}
+      
+        
+  

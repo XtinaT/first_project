@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <title>Галерея</title>
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link href="style_gallery.css" rel="stylesheet" type="text/css" />
+    <link href="style_preloader.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+  </head>
+  <body> 
+    <div class="preloader">
+    <svg class="preloader__image" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div> 
+   <div class="WRAP">
+    <a id="UP"></a>
+    <div class="HIDDEN_MENU">
+      <input id="toggle" type="checkbox">
+      <label class="toggle_button" for="toggle">
+        <span></span>
+      </label>
+      <ul class="MENU_BOX">
+        <li> <a class="MENU_ITEM" href="https://project.xtinat.repl.co/">ГЛАВНАЯ</a> </li>
+        <li> <a class="MENU_ITEM" href="./destinations.html">НАПРАВЛЕНИЯ</a></li>
+        <li> <a class="MENU_ITEM" href="./gallery.html">ГАЛЕРЕЯ</a> </li>
+        <li> <a class="MENU_ITEM" href="./contacts.html">КОНТАКТЫ</a> </li>
+      </ul>
+    </div>
+    <div class="MENU">
+      <ul id="navbar">
+        <li> <a href="https://project.xtinat.repl.co/">ГЛАВНАЯ</a> </li>
+        <li> <a href="./destinations.html">НАПРАВЛЕНИЯ</a><button type="button" value="show" onclick="showList()">&#9660;</button>
+         <ul id="hidden_list">
+          <li><a href="./elna.html" title="Республиканский ландшафтный заказник &laquo;Ельня&raquo;">Республиканский ландшафтный заказник &laquo;Ельня&raquo;</a></li>
+          <li><a href="./geludok.html">Дворец Четвертинских</a></li>
+          <li><a href="./kossovo.html">Дворец Пусловских</a></li>
+          <li><a href="./bogushevichi.html">Костёл Божьего Тела в Богушевичах</a></li>
+          <li><a href="./kniazici.html">Костёл Святого Антония в Княжицах</a></li>
+          <li><a href="./kozel-pokl.html">Усадьба Козел-Поклёвских</a></li>
+          <li><a href="./soligorsk.html">Солигорские терриконы</a></li>
+          <li><a href="./gorodishche.html">Минское городище</a></li>
+        </ul>
+         </li>
+        <li> <a href="./gallery.html">ГАЛЕРЕЯ</a> </li>
+        <li> <a href="./contacts.html">КОНТАКТЫ</a> </li>
+      </ul>
+    </div>
+    <div class="HEADER"><h2>Галерея</h2></div>
+    <div class="CONTENT_FOR_DEST">
+    <div class="CONTAINER">
+      <div class="ELEMENT">
+        <a href="#FULL1"><img src="/images/1.jpg" alt="Фото тропы"></a>
+        <div id="FULL1">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/1.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL2"><img src="/images/2.jpg" alt="Фото болота"></a>
+        <div id="FULL2">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/2.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL3"><img src="/images/3.jpg" alt="Фото поля"></a>
+        <div id="FULL3">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/3.jpg" class="VERTICAL" alt="Фото поля"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL4"><img src="/images/4.jpg" alt="Фото болота"></a>
+        <div id="FULL4">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/4.jpg" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL5"><img src="/images/5.jpg" alt="Фото поля"></a>
+        <div id="FULL5">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/5.jpg" class="VERTICAL" alt="Фото поля"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL6"><img src="/images/6.jpg" alt="Фото болота"></a>
+        <div id="FULL6">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/6.jpg" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL52"><img src="/images/52.jpg" alt="Фото интерьера дворца"></a>
+        <div id="FULL52">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/52.jpg" class="VERTICAL" alt="Фото интерьера дворца"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL8"><img src="/images/8.jpg" alt="Фото тропы"></a>
+        <div id="FULL8">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/8.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL51"><img src="/images/51.jpg" alt="Фото костёла"></a>
+        <div id="FULL51">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/51.jpg" class="VERTICAL" alt="Фото костёла"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL11"><img src="/images/11.jpg" alt="Фото тропы"></a>
+        <div id="FULL11">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/11.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL12"><img src="/images/12.jpg" alt="Фото болота"></a>
+        <div id="FULL12">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/12.jpg" class="VERTICAL" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL13"><img src="/images/13.jpg" alt="Фото тропы"></a>
+        <div id="FULL13">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/13.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL14"><img src="/images/14.jpg" alt="Фото стенда"></a>
+        <div id="FULL14">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/14.jpg" alt="Фото стенда"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL15"><img src="/images/15.jpg" alt="Фото дорожки"></a>
+        <div id="FULL15">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/15.jpg" alt="Фото дорожки"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL16"><img src="/images/16.jpg" alt="Фото стенда"></a>
+        <div id="FULL16">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/16.jpg" alt="Фото стенда"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL17"><img src="/images/17.jpg" alt="Фото тропы"></a>
+        <div id="FULL17">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/17.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL18"><img src="/images/18.jpg" alt="Фото тропы"></a>
+        <div id="FULL18">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/18.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL19"><img src="/images/19.jpg" alt="Фото тропы"></a>
+        <div id="FULL19">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/19.jpg" class="VERTICAL" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL53"><img src="/images/53.jpg" alt="Фото дворца"></a>
+        <div id="FULL53">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/53.jpg" class="VERTICAL" alt="Фото дворца"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL54"><img src="/images/54.jpg" alt="Фото костёла"></a>
+        <div id="FULL54">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/54.jpg" class="VERTICAL" alt="Фото костёла"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL21"><img src="/images/21.jpg" alt="Фото болота"></a>
+        <div id="FULL21">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/21.jpg" class="VERTICAL" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL22"><img src="/images/22.jpg" alt="Фото болота"></a>
+        <div id="FULL22">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/22.jpg" class="VERTICAL" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL23"><img src="/images/23.jpg" alt="Фото клюквы"></a>
+        <div id="FULL23">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/23.jpg" class="VERTICAL" alt="Фото клюквы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL24"><img src="/images/24.jpg" alt="Фото болота"></a>
+        <div id="FULL24">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/24.jpg" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL25"><img src="/images/25.jpg" alt="Фото болота"></a>
+        <div id="FULL25">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/25.jpg" alt="Фото болота"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL27"><img src="/images/27.jpg" alt="Фото тропы"></a>
+        <div id="FULL27">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/27.jpg" alt="Фото тропы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL28"><img src="/images/28.jpg" alt="Фото костёла"></a>
+        <div id="FULL28">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/28.jpg" alt="Фото костёла"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL29"><img src="/images/29.jpg" alt="Фото усадьбы"></a>
+        <div id="FULL29">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/29.jpg" alt="Фото усадьбы"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL30"><img src="/images/30.jpg" alt="Фото терриконов"></a>
+        <div id="FULL30">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/30.jpg" alt="Фото терриконов"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL31"><img src="/images/31.jpg" alt="Фото дворца"></a>
+        <div id="FULL31">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/31.jpg" alt="Фото дворца"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL32"><img src="/images/32.jpg" alt="Фото дворца"></a>
+        <div id="FULL32">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/32.jpg" alt="Фото дворца"></div>
+      </div>
+      <div class="ELEMENT">
+        <a href="#FULL33"><img src="/images/33.jpg" alt="Фото костёла"></a>
+        <div id="FULL33">
+          <a href="#close" title="Close" class="close">X</a>
+          <img src="/images/33.jpg" alt="Фото костёла"></div>
+      </div>
+      
+    </div>
+    </div>
+    <div class="FOOTER">
+      <form class="MESSAGE" name="message">
+        <h3>СВЯЖИСЬ С НАМИ!</h3>
+        <p>
+          <input type="text" name="your_name" placeholder="Имя">
+        </p><br>
+        <p>
+          <input type="text" name="your_email" placeholder="Email" required>
+        </p><br>
+          <textarea name="place_for_message" placeholder="Сообщения" rows="3"></textarea>
+        <br>
+          <input class="submit_button" type="submit" value="Отправить">
+      </form>
+      <div class="HIDDEN_CONTACTS"> <a href="./contacts.html"><h3>СВЯЖИСЬ С НАМИ!</h3></a>
+      </div>
+      <div class="SOCIAL_MEDIA">
+        <a href="" target=_blank title="Мы в Instagram"><div class=INSTAGRAM></div></a>
+        <a href="" target=_blank title="Мы на Youtube"><div class=YOUTUBE></div></a>
+        <a href="" target=_blank title="Мы на Facebook"><div class=FACEBOOK></div></a>
+    </div>
+     <div class="INFO">
+        <p>2021 Christina Tomasheva <br> tomasheva_xtina@icloud.com</p>
+      </div>
+    </div>
+    <div class="goUp">
+     <a href="#UP"><img src="/images/up.png" alt="Изображение стрелки"></a>
+    </div>
+  </div>
+    <script src="preload.js"></script>
+    <script src="showList.js"></script>   
+  </body>
+</html>

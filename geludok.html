@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True"/>
+    <meta name="viewport" content="width=device-width, height=device-height, target-densitydpi=device-dpi, initial-scale=1">
+    <title>Дворец Четвертинских</title>
+    <link href="style_common.css" rel="stylesheet" type="text/css" />
+    <link href="style_simple.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    
+  </head>
+  <body> 
+   <div class="WRAP"> 
+    <a id="UP"></a>
+    <div class="HIDDEN_MENU">
+      <input id="toggle" type="checkbox">
+      <label class="toggle_button" for="toggle">
+        <span></span>
+      </label>
+      <ul class="MENU_BOX">
+        <li> <a class="MENU_ITEM" href="https://project.xtinat.repl.co/">ГЛАВНАЯ</a> </li>
+        <li> <a class="MENU_ITEM" href="./destinations.html">НАПРАВЛЕНИЯ</a></li>
+        <li> <a class="MENU_ITEM" href="./gallery.html">ГАЛЕРЕЯ</a> </li>
+        <li> <a class="MENU_ITEM" href="./contacts.html">КОНТАКТЫ</a> </li>
+      </ul>
+    </div>
+    <div class="MENU">
+      <ul id="navbar">
+        <li> <a href="https://project.xtinat.repl.co/">ГЛАВНАЯ</a> </li>
+        <li> <a href="./destinations.html">НАПРАВЛЕНИЯ</a><button type="button" value="show" onclick="showList()">&#9660;</button>
+         <ul id="hidden_list">
+          <li><a href="./elna.html" title="Республиканский ландшафтный заказник &laquo;Ельня&raquo;">Республиканский ландшафтный заказник &laquo;Ельня&raquo;</a></li>
+          <li><a href="./geludok.html">Дворец Четвертинских</a></li>
+          <li><a href="./kossovo.html">Дворец Пусловских</a></li>
+          <li><a href="./bogushevichi.html">Костёл Божьего Тела в Богушевичах</a></li>
+          <li><a href="./kniazici.html">Костёл Святого Антония в Княжицах</a></li>
+          <li><a href="./kozel-pokl.html">Усадьба Козел-Поклёвских</a></li>
+          <li><a href="./soligorsk.html">Солигорские терриконы</a></li>
+          <li><a href="./gorodishche.html">Минское городище</a></li>
+        </ul>
+         </li>
+        <li> <a href="./gallery.html">ГАЛЕРЕЯ</a> </li>
+        <li> <a href="./contacts.html">КОНТАКТЫ</a> </li>
+      </ul>
+    </div>
+    <div class="HEADER"><h2>Дворец Четвертинских</h2></div>
+    <div class="CONTENT_FOR_DEST"><p>Привет! Скоро тут будет много текста!</p>
+    <div><img src="/images/31.jpg" alt="Фото дворца"></div>
+    </div>
+    <div class="FOOTER">
+      <form class="MESSAGE" name="message">
+        <h3>СВЯЖИСЬ С НАМИ!</h3>
+        <p>
+          <input type="text" name="your_name" placeholder="Имя">
+        </p><br>
+        <p>
+          <input type="text" name="your_email" placeholder="Email" required>
+        </p><br>
+          <textarea name="place_for_message" placeholder="Сообщения" rows="3"></textarea>
+        <br>
+          <input class="submit_button" type="submit" value="Отправить">
+      </form>
+      <div class="HIDDEN_CONTACTS"> <a href="./contacts.html"><h3>СВЯЖИСЬ С НАМИ!</h3></a>
+      </div>
+      <div class="SOCIAL_MEDIA">
+        <a href="" target=_blank title="Мы в Instagram"><div class=INSTAGRAM></div></a>
+        <a href="" target=_blank title="Мы на Youtube"><div class=YOUTUBE></div></a>
+        <a href="" target=_blank title="Мы на Facebook"><div class=FACEBOOK></div></a>
+    </div>
+     <div class="INFO">
+        <p>2021 Christina Tomasheva <br> tomasheva_xtina@icloud.com</p>
+      </div>
+    </div>
+    <div class="goUp">
+     <a href="#UP"><img src="/images/up.png" alt="Изображение стрелки"></a>
+    </div>
+
+   </div> 
+   <script src="showList.js"></script>  
+  </body>
+</html>
